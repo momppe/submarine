@@ -1,0 +1,126 @@
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #343434;
+}
+
+.frame {
+   width: 1200px;
+   height: 800px;
+   position: relative;
+   border: 1px solid black;
+   background-image: url("../img/bg.jpg");
+   margin: auto;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.missile {
+   position: absolute;
+   background-image: url("../img/miss.png");
+   background-repeat: no-repeat;
+   /*left:530px;*/
+   top: 470px;
+   width: 11px;
+   height: 69px;
+   z-index: 1;
+}
+
+.bomb {
+   position: absolute;
+   background-image: url("../img/bomb.png");
+   background-repeat: no-repeat;
+   top: 200px;
+   width: 30px;
+   height: 28px;
+   z-index: 2;
+}
+
+.submarine {
+   position: absolute;
+   background-image: url("../img/sm-r.png");
+   /*background-repeat: no-repeat;*/
+   left:500px;
+   top: 500px;
+   width: 200px;
+   height: 59px;
+   z-index: 3;
+}
+
+.bship {
+   position: absolute;
+   background-image: url("../img/bship-r.png");
+   background-repeat: no-repeat;
+   left:70px;
+   top: 112px;
+   width: 200px;
+   height: 57px;
+   display: none;
+   z-index: 4;
+}
+
+.score {
+   position: absolute;
+   font-size: 1.5em;
+   font-family: 'Russo One', sans-serif;
+   color: rgb(78, 7, 39);
+   left:1040px;
+   top: 25px;
+   z-index: 5;
+}
+
+.gameover {
+   position: absolute;
+   color: #a80b0b;
+   font-size: 3em;
+   font-family: 'Russo One', sans-serif;
+   background-color: #000000;
+   top: 0px;
+   left: 0px;
+   width: 1200px;
+   height: 800px;
+   padding: 370px;
+   opacity: 0.8;
+   text-align: center;
+   display: none;
+}
+
+
+.dead {
+   position: absolute;
+   color: #ffffff;
+   font-size: 1.7em;
+   font-family: 'Russo One', sans-serif;
+   background-color: #bf0000;
+   top: 365px;
+   left: 450px;
+   width: 300px;
+   height: 60px;
+   text-align: center;
+   padding: 17px;
+}
+
+
+.live {
+   position: absolute;
+   font-size: 1.5em;
+   font-family: 'Russo One', sans-serif;
+   color: rgb(78, 7, 39);
+   left:40px;
+   top: 25px;
+   z-index: 6;
+}
+
+.explosion {
+   position: absolute;
+   background-image: url("../img/explosion.gif");
+   background-repeat: no-repeat;
+   /*display: none;*/
+   top: 112px;
+   left: 500px;
+   width: 113px;
+   height: 119px;
+   z-index: 10;
+}
